@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 25px;
+            max-width: 500px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(76, 222, 9, 0.1);
+        }
+
+        div {
+            margin-bottom: 15px;
+        }
+
+         label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        } 
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML FORM</h1>
+    <form>
+        <div>
+            <label for="username">Username</label>
+            <input type="text" id="username" />
+        </div>
+        <div>
+            <label for="email">Enter Your Email</label>
+            <input type="email" id="email" />
+        </div>
+        <div>
+            <label for="textarea">Message</label>
+            <textarea id="textarea" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="birthdate">Birthdate</label>
+            <input type="date" name="birthdate">
+        </div>
+
+        <input type="submit" value="Submit" />
+        <fieldset>
+            <legend>Personal Info :</legend>
+            <input type="week">
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
