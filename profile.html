@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+
+
+        }
+        .outer{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            box-shadow: black;
+        }
+
+        .container {
+            
+            width: 300px;
+            background-color: aquamarine;
+            display: flex;
+            
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px red;
+
+        }
+
+        .round {
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            
+            margin-bottom: 200px;
+            margin-left: 100px;
+        }
+        .details p{
+           padding: 8px 16px;
+           font-size: 16px;
+           
+            
+        }
+        .btn {
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+           .btn:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+
+        <div class="container">
+            <div class="round">image</div>
+            <div class="details">
+                <p>Name : Pranjal Mahajan</p>
+                <p>Job Title :- Developer</p>
+                <button class="btn">Follow</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
