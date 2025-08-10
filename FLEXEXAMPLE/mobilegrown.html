@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  display: flex;
+  border: 2px solid black;
+  height: 100px;
+}
+
+.box {
+  background: lightblue;
+  border: 1px solid navy;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Grow Example */
+.grow {
+  flex-grow: 1; /* Extra space fill karega */
+}
+
+/* Shrink Example */
+.shrink {
+  flex-shrink: 1; /* Kam space me chhota ho jayega */
+  width: 300px;   /* Normal width zyada rakhi hai */
+}
+</style>
+</head>
+<body>
+
+<h2>Flex Grow Example</h2>
+<div class="container">
+  <div class="box grow">Grow 1</div>
+  <div class="box">Normal</div>
+</div>
+
+<h2>Flex Shrink Example</h2>
+<div class="container" style="width: 250px;">
+  <div class="box shrink">Shrink 1</div>
+  <div class="box">Normal</div>
+</div>
+
+</body>
+</html>
+<!-- 1. flex-grow — “When there’s extra space, who gets it?”
+Definition: Controls how much an item will grow relative to other items when there’s extra space in the container.
+
+Default value: 0 (won’t grow at all unless told to).
+
+Logic: Bigger number = more extra space taken.
+
+Example:
+
+css
+Copy
+Edit
+.item1 { flex-grow: 1; }
+.item2 { flex-grow: 2; }
+If extra space is 300px:
+
+item1 gets 100px (1 part)
+
+item2 gets 200px (2 parts)
+Ratio = 1:2
+
+Website usage:
+If you want a sidebar and main content to fill the remaining width proportionally, flex-grow decides the share of the pie each gets.
+
+2. flex-shrink — “When there’s not enough space, who sacrifices more?”
+Definition: Controls how much an item will shrink relative to other items when the container is smaller than the total items.
+
+Default value: 1 (all items shrink equally unless told otherwise).
+
+Logic: Bigger number = shrinks more.
+
+Example:
+
+css
+Copy
+Edit
+.item1 { flex-shrink: 1; }
+.item2 { flex-shrink: 3; }
+If container shrinks by 200px:
+
+item1 loses 50px
+
+item2 loses 150px
+Ratio = 1:3
+
+Website usage:
+If you want a logo in a navbar to shrink less than menu items on small screens, you’d give logo a smaller flex-shrink (like 0).
+
+3. flex-basis — “What’s your starting size before growing/shrinking?”
+Definition: The initial size of the flex item before any growing or shrinking happens.
+
+Default value: auto (size based on content or width property).
+
+Logic: Think of it as the “base size” before flex rules kick in.
+
+Example:
+
+css
+Copy
+Edit
+.item1 { flex-basis: 200px; }
+.item2 { flex-basis: 100px; }
+They start at those widths, and then grow/shrink as per the other two properties.
+
+Website usage:
+If you want cards to start at 250px width but still be responsive, you set flex-basis: 250px and then let grow/shrink adjust them.
+
+4. The Magic Shortcut: flex
+Instead of writing:
+
+css
+Copy
+Edit
+.item {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 200px;
+}
+You can write:
+
+css
+Copy
+Edit
+.item {
+  flex: 1 0 200px;
+}
+Format:
+flex: <grow> <shrink> <basis>
+
+How it works together (mental picture)
+flex-basis: “I start at 200px.”
+
+flex-grow: “If there’s extra space, I take 2x more than my neighbor.”
+
+flex-shrink: “If space is tight, I give up space 3x faster than my neighbor.”
+
+Real-world example: Responsive Navbar
+css
+Copy
+Edit
+.navbar {
+  display: flex;
+}
+
+.logo {
+  flex: 0 0 150px; /* never grows, never shrinks, fixed size */
+}
+
+.menu {
+  flex: 1 1 auto; /* can grow to fill space, can shrink if needed */
+}
+
+.search {
+  flex: 2 1 200px; /* starts at 200px, grows twice as much as menu */
+}
+On large screens → search box becomes wider.
+
+On small screens → search shrinks, logo stays fixed.
+ -->

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Shrink Example</title>
+    <style>
+        .container {
+            width: 600px;
+            display: flex;
+            border: 2px solid black;
+        }
+        .box1, .box2, .box3 {
+            flex-basis: 300px; /* starting width */
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+        }
+        .box1 {
+            background-color: gray;
+            flex-shrink: 0; /* bilkul shrink nahi karega */
+        }
+        .box2 {
+            background-color: black;
+            flex-shrink: 1; /* normal shrink */
+        }
+        .box3 {
+            background-color: crimson;
+            flex-shrink: 2; /* double shrink karega */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">11</div>
+        <div class="box2">12</div>
+        <div class="box3">13</div>
+    </div>
+</body>
+</html>
