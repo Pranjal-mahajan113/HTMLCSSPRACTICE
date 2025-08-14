@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-child vs nth-of-type Demo</title>
+    <style>
+        /* -------------------------
+           nth-child(4)
+           → Counts ALL elements from the parent, not just <p>.
+           → Highlights a <p> ONLY if it is exactly the 4th child of the parent.
+        ------------------------- */
+        p:nth-child(4) {
+            background-color: lightcoral; /* Red-ish for demo */
+        }
+
+        /* -------------------------
+           nth-of-type(4)
+           → Counts ONLY <p> elements from the parent.
+           → Highlights the 4th <p> regardless of other element types before it.
+        ------------------------- */
+        p:nth-of-type(4) {
+            background-color: chartreuse; /* Green for demo */
+        }
+    </style>
+</head>
+
+<body>
+    <button>Button</button>
+    <br>
+    <a href="#">A link</a>
+    <br>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+    <p>Paragraph 4 (Will be green: nth-of-type(4))</p>
+    <p>Paragraph 5</p>
+</body>
+
+</html>
