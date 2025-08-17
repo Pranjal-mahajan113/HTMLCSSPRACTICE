@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            height: 100vh; /* This makes all columns equal in height for demo */
+        }
+
+        /* Column styles */
+        .box {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #333;
+        }
+
+        /* 100vh box */
+        .vh-box {
+            background-color: #ffcccb;
+            height: 100vh;
+        }
+
+        /* 100px box */
+        .px-box {
+            background-color: #add8e6;
+            height: 100px;
+        }
+
+        /* 100% box (depends on parent) */
+        .percent-parent {
+            background-color: #d3ffd3;
+            height: 200px; /* Parent height */
+        }
+        .percent-child {
+            background-color: #90ee90;
+            height: 100%; /* Matches parent's height */
+        }
+
+        /* Labels */
+        h2 {
+            font-size: 16px;
+            text-align: center;
+            padding: 5px;
+        }
+        p {
+            font-size: 14px;
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Column 1: 100vh -->
+    <div class="box">
+        <h2>100vh</h2>
+        <div class="vh-box">
+            <p>Fills full screen height</p>
+        </div>
+    </div>
+
+    <!-- Column 2: 100px -->
+    <div class="box">
+        <h2>100px</h2>
+        <div class="px-box">
+            <p>Fixed height</p>
+        </div>
+    </div>
+
+    <!-- Column 3: 100% -->
+    <div class="box">
+        <h2>100%</h2>
+        <div class="percent-parent">
+            <div class="percent-child">
+                <p>Matches parent height (200px)</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
