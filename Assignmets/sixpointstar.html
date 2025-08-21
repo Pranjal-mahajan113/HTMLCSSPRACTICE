@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS STAR</title>
+    <style>
+    .star {
+      position: relative;
+      width: 0;
+      height: 0;
+      margin: 100px auto;
+      border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+      border-bottom: 173px solid yellow; 
+    }
+
+     .star::after {
+      content: "";
+      position: absolute;
+      top: 45px;   /* shift down */
+      left: -100px; /* align horizontally */
+      width: 0;
+      height: 0;
+      border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+      border-top: 173px solid yellow; 
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="star"></div>
+  
+</body>
+</html>

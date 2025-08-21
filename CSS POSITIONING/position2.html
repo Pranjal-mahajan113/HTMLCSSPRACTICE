@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Position Demo</title>
+<style>
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Container for relative & absolute */
+.container {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background-color: #f0c27b;
+    margin-bottom: 40px;
+    border: 2px dashed #333;
+}
+
+/* Boxes */
+.box {
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Static box */
+.static { 
+    position: static;
+    background-color: lightblue;
+    margin-bottom: 10px;
+}
+
+/* Relative box */
+.relative {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: lightgreen;
+}
+
+/* Absolute box */
+.absolute {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: coral;
+}
+
+/* Fixed box */
+.fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: lightcoral;
+}
+
+/* Sticky box inside scrollable container */
+.scroll-container {
+    height: 200px;
+    overflow-y: scroll;
+    border: 2px solid #333;
+    padding: 10px;
+    background: #e0e0e0;
+    margin-top: 40px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: lightseagreen;
+}
+</style>
+</head>
+<body>
+
+<h2>Static Box (default)</h2>
+<div class="box static">Static</div>
+
+<h2>Relative & Absolute Boxes (inside container)</h2>
+<div class="container">
+    <div class="box relative">Relative</div>
+    <div class="box absolute">Absolute</div>
+</div>
+
+<h2>Fixed Box</h2>
+<div class="box fixed">Fixed</div>
+
+<h2>Sticky Box (scroll inside container)</h2>
+<div class="scroll-container">
+    <div class="box sticky">Sticky</div>
+    <p>Scroll down this container to see sticky effect.</p>
+    <p style="height: 800px;">More content here...</p>
+</div>
+
+</body>
+</html>

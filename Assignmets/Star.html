@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Star using Box Model</title>
+  <style>
+    .star {
+      position: relative;
+      display: block;
+      margin: 100px auto;
+      width: 0;
+      height: 0;
+      border-right: 90px solid transparent;
+      border-bottom: 70px solid yellow;
+      border-left: 100px solid transparent;
+      transform: rotate(35deg);
+    }
+
+    .star:before {
+      content: '';
+      position: absolute;
+      top: -30px;
+      left: -75px;
+      width: 0;
+      height: 0;
+      border-right: 60px solid transparent;
+      border-bottom: 50px solid yellow;
+      border-left: 55px solid transparent;
+      transform: rotate(-35deg);
+    }
+
+    .star:after {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: -105px;
+      width: 0;
+      height: 0;
+      border-right: 105px solid transparent;
+      border-bottom: 70px solid yellow;
+      border-left: 105px solid transparent;
+      transform: rotate(-70deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="star"></div>
+</body>
+</html>
