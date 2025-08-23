@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Comments Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .comments-section {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+        }
+
+        button {
+            padding: 8px 16px;
+            font-size: 14px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .comments-container {
+            margin-top: 20px;
+            width: 100%;
+            border: 1px solid #bb1313;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .comment {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .comment-details {
+            font-size: 13px;
+            font-style: italic;
+            color: #666;
+        }
+
+        .comment-author {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="comments-section">
+        <h2>Comments</h2>
+        <p>Share your thoughts below!</p>
+        <textarea placeholder="Write your comment here..." rows="4"></textarea>
+        <button>Submit</button>
+
+        <div class="comments-container">
+            <div class="comment">
+                <p>This is an excellent article!</p>
+                <div class="comment-details">
+                    <span class="comment-author">Akash</span>
+                    <span class="comment-date">Today</span>
+                </div>
+            </div>
+
+            <div class="comment">
+                <p>I totally agree.</p>
+                <div class="comment-details">
+                    <span class="comment-author">Mrityunjay</span>
+                    <span class="comment-date">Yesterday</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

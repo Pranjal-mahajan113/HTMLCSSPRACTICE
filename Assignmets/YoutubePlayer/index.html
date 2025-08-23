@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Youtube Player</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .player {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .video-container {
+      flex: 2;
+    }
+
+    .video {
+      width: 100%;
+      height: 50vh;
+      border-radius: 8px;
+    }
+
+    .video-container h2 {
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .video-list {
+      flex: 3;
+    }
+
+    .video-list ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    .video-list li {
+      list-style: none;
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 15px;
+    }
+
+    .video-list img {
+      width: 100px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    .video-list p {
+      margin: 10px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .video-list span {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="player"> <!-- flex container -->
+    <!-- Main video -->
+    <div class="video-container"><!-- flex item 1 -->
+      <video class="video" controls><!-- flex item 2 -->
+        <source src="big_buck_bunny_720p_10mb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h2>Animated cartoon for Children | 2023</h2>
+    </div>
+
+
+    <div class="video-list">
+      <ul>
+        <li>
+        <video width="150" height="100" controls>
+          <source src="/Assignmets/YoutubePlayer/6356499_Herd_Afghanistan_3840x2160.mp4" type="video/mp4">
+        </video>
+        <p><span>Video 1</span> Short description of Video 1</p>
+        </li>
+        <li>
+          <video width="150" height="100" controls>
+            <source src="/Assignmets/YoutubePlayer/6356499_Herd_Afghanistan_3840x2160.mp4" type="video/mp4">
+          </video>
+          <p><span>Video 2</span> Short description of Video 2</p>
+        </li>
+        <li>
+          <video width="150" height="100" controls>
+            <source src="/Assignmets/YoutubePlayer/6356499_Herd_Afghanistan_3840x2160.mp4" type="video/mp4">
+          </video>
+          <p><span>Video 3</span> Short description of Video 3</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
