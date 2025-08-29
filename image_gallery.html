@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f8f8f8;
+    }
+
+    .imageGallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 15px;
+    }
+
+    .images {
+      border: 3px solid #333;
+      border-radius: 8px;
+      overflow: hidden; /* to crop image edges */
+    }
+
+    .images img {
+      width: 100%;      /* image fills container */
+      height: 200px;    /* fixed height */
+      object-fit: cover; /* crop without distortion */
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 style="text-align:center; margin-bottom:20px;">Image Gallery</h1>
+  
+  <div class="imageGallery">
+    <div class="images"><img src="urauns.jpg" alt="img1"></div>
+    <div class="images"><img src="urauns.jpg" alt="img2"></div>
+    <div class="images"><img src="urauns.jpg" alt="img3"></div>
+    <div class="images"><img src="urauns.jpg" alt="img4"></div>
+    <div class="images"><img src="urauns.jpg" alt="img5"></div>
+    <div class="images"><img src="urauns.jpg" alt="img6"></div>
+    <div class="images"><img src="urauns.jpg" alt="img7"></div>
+  </div>
+
+</body>
+</html>
