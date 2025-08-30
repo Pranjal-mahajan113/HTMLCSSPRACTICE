@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .hero-section {
+            position: relative;
+            height: 500px;
+
+
+        }
+
+        .hero-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .product-cards {
+            position: absolute;
+            bottom: -50px;
+            /* top: 90%; */
+            left: 50%;
+            /* top: 250px;
+             left: 50px; */
+            /* transform: translate(-50%, -30%); */
+            transform: translateX(-50%);
+            /* center horizontally */
+            display: flex;
+            /* flex-direction: row; */
+            z-index: 1;
+            gap: 20px;
+        }
+
+        .product-card {
+            width: 300px;
+            height: 300px;
+            background-color: white;
+            /* margin-right: 20px; */
+            text-align: center;
+            z-index: 2;
+            position: relative;
+            padding-top: 50px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+
+
+        }
+
+        .product-card img {
+            width: 120px;
+            height: 180px;
+
+            object-fit: contain;
+        }
+
+        .product-card h3 {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .product-card p {
+            margin-top: 30px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero-section">
+        <img src="/Assignmets/Amazon.com/bg.jpg" alt="Hero-img">
+        <div class="product-cards">
+            <div class="product-card">
+                <img src="/Assignmets/Amazon.com/product1.jpg" alt="Product1">
+                <h3>Product 1</h3>
+                <p>Product 1 Descriptions</p>
+            </div>
+
+            <div class="product-card">
+                <img src="/Assignmets/Amazon.com/p3.jpg" alt="Product2">
+                <h3>Product 2</h3>
+                <p>Product 2 Descriptions</p>
+            </div>
+
+            <div class="product-card">
+                <img src="/Assignmets/Amazon.com/p4.jpg" alt="Product3">
+                <h3>Product 3</h3>
+                <p>Product 3 Descriptions</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
