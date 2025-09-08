@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Playground</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body class="p-4">
+
+    <div class="container">
+        <h2 class="mb-4">🚀 Bootstrap Button </h2>
+
+        <!-- ============= Basic Buttons ============= -->
+        <!-- "btn" + "btn-primary" → Bootstrap ka default blue button -->
+        <button class="btn btn-primary">Primary</button>
+        <!-- Secondary (greyish look, usually for less important actions) -->
+        <button class="btn btn-secondary">Secondary</button>
+        <!-- Success (green, use for positive actions like Save, Submit, Done) -->
+        <button class="btn btn-success">Success</button>
+        <!-- Danger (red, use for delete, remove, cancel) -->
+        <button class="btn btn-danger">Danger</button>
+        <!-- Warning (yellow, use for alerts or confirm actions) -->
+        <button class="btn btn-warning">Warning</button>
+        <!-- Info (teal/blue, use for informational actions) -->
+        <button class="btn btn-info">Info</button>
+        <!-- Light (white with border, neutral) -->
+        <button class="btn btn-light">Light</button>
+        <!-- Dark (black button, use for contrast) -->
+        <button class="btn btn-dark">Dark</button>
+        <br><br>
+
+        <!-- ============= Outline Buttons ============= -->
+        <h4>Outline Buttons (Transparent Background)</h4>
+        <!-- Outline versions are used when you don’t want a filled background -->
+        <button class="btn btn-outline-primary">Outline Primary</button>
+        <button class="btn btn-outline-success">Outline Success</button>
+        <button class="btn btn-outline-danger">Outline Danger</button>
+        <br><br>
+
+        <!-- ============= Button Sizes ============= -->
+        <h4>Button Sizes</h4>
+        <!-- Large Button (use when you want to highlight something big) -->
+        <button class="btn btn-primary btn-lg">Large Button</button>
+        <!-- Normal Button (default size) -->
+        <button class="btn btn-primary">Default Button</button>
+        <!-- Small Button (use in tables or compact UI) -->
+        <button class="btn btn-primary btn-sm">Small Button</button>
+        <br><br>
+
+        <!-- ============= Block / Full Width Button ============= -->
+        <h4>Block Level Button (Full Width)</h4>
+        <!-- Use "d-grid" wrapper for making button full width -->
+        <div class="d-grid gap-2">
+            <button class="btn btn-success btn-lg">Full Width Button</button>
+        </div>
+        <br>
+
+        <!-- ============= Disabled Button ============= -->
+        <h4>Disabled Button</h4>
+        <!-- Use disabled attribute -->
+        <button class="btn btn-danger" disabled>Disabled</button>
+        <br><br>
+
+        <!-- ============= Button with Icon ============= -->
+        <h4>Button with Icon (using Bootstrap Icons or FontAwesome)</h4>
+        <!-- Bootstrap Icon example (install Bootstrap Icons separately if needed) -->
+        <button class="btn btn-dark">
+            <span class="me-2">🔍</span> Search
+        </button>
+        <button class="btn btn-success">
+            <span class="me-2">✔</span> Submit
+        </button>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
